@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AdventPro"; /* Define a name for your font */
-  src: url("/assets/fonts/AdventPro.ttf") format("truetype"); /* Path to your .ttf file */
+  src: url("./assets/fonts/AdventPro.ttf") format("truetype"); /* Path to your .ttf file */
   font-weight: 400; /* Normal weight */
   font-style: normal; /* Normal style */
 }
@@ -53,7 +53,7 @@ body {
   background-position: center;
   border-radius: 55%;
   background-size: cover;
-  background-image: url("/assets/images/logo.jpg");
+  background-image: url("./assets/images/logo.jpg");
   margin-right: 100px;
 }
 .main {
@@ -63,7 +63,7 @@ body {
 }
 .main .banner {
   height: 230px;
-  background-image: url("/assets/images/logo.jpg");
+  background-image: url("./assets/images/logo.jpg");
   background-position: 10% 51.2%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,10 +114,10 @@ body {
   background-size: cover;
 }
 .slide.one .photo {
-  background-image: url("/assets/images/photo_one.jpg");
+  background-image: url("./assets/images/photo_one.jpg");
 }
 .slide.two .photo {
-  background-image: url("/assets/images/photo_two.png");
+  background-image: url("./assets/images/photo_two.png");
 }
 .slide.two {
   margin-top: 5%;
@@ -125,7 +125,7 @@ body {
 .wall {
   width: 100%;
   height: 314px;
-  background-image: url("/assets/images/wall.png");
+  background-image: url("./assets/images/wall.png");
   background-size: contain;
   margin-top: 100px;
 }
@@ -138,7 +138,7 @@ body {
 .price_container .price {
   width: 989px;
   height: 613px;
-  background-image: url("/assets/images/price.png");
+  background-image: url("./assets/images/price.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -15px -8px;
@@ -182,22 +182,22 @@ body {
   border-radius: 10px;
 }
 .photo.one {
-  background-image: url("/assets/images/gallery_1.png");
+  background-image: url("./assets/images/gallery_1.png");
 }
 .photo.two {
-  background-image: url("/assets/images/gallery_2.png");
+  background-image: url("./assets/images/gallery_2.png");
 }
 .photo.three {
-  background-image: url("/assets/images/gallery_3.png");
+  background-image: url("./assets/images/gallery_3.png");
 }
 .photo.four {
-  background-image: url("/assets/images/gallery_4.png");
+  background-image: url("./assets/images/gallery_4.png");
 }
 .photo.five {
-  background-image: url("/assets/images/gallery_5.png");
+  background-image: url("./assets/images/gallery_5.png");
 }
 .photo.six {
-  background-image: url("/assets/images/gallery_6.png");
+  background-image: url("./assets/images/gallery_6.png");
 }
 .photo.four,
 .photo.five,
@@ -215,7 +215,7 @@ body {
 .footer .logo {
   width: 285px;
   height: 285px;
-  background-image: url("/assets/images/logo.jpg");
+  background-image: url("./assets/images/logo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
