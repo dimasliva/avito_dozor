@@ -1,8 +1,14 @@
 @font-face {
-  font-family: "AdventPro"; /* Define a name for your font */
-  src: url("../fonts/AdventPro.ttf") format("truetype"); /* Path to your .ttf file */
-  font-weight: 400; /* Normal weight */
-  font-style: normal; /* Normal style */
+  font-family: "AdventPro";
+  src: url("../fonts/AdventPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -12,26 +18,26 @@
 }
 body {
   background-color: #0f0b16;
-  font-family: "AdventPro", sans-serif; /* Use the custom font */
+  font-family: "AdventPro", sans-serif;
 }
 .nav {
   background-color: #16131e;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 272px;
+  height: 198px; /* 272px * 0.73 */
   color: #fff;
-  padding: 0 10%;
+  padding: 0 7.3%; /* 10% * 0.73 */
 }
 .links {
   display: flex;
   justify-content: space-between;
-  font-size: 35px;
-  width: 90%;
+  font-size: 25.55px; /* 35px * 0.73 */
+  width: 65.7%; /* 90% * 0.73 */
 }
 .link {
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 7.3px 21.9px; /* 10px 30px * 0.73 */
   transition: all 0.3 ease-in-out;
   border: 1px solid transparent;
 }
@@ -48,21 +54,21 @@ body {
   border: 1px solid #92e3f2;
 }
 .logo {
-  min-width: 205px;
-  min-height: 205px;
+  min-width: 149.65px; /* 205px * 0.73 */
+  min-height: 149.65px; /* 205px * 0.73 */
   background-position: center;
   border-radius: 55%;
   background-size: cover;
   background-image: url("../images/logo.jpg");
-  margin-right: 100px;
+  margin-right: 73px; /* 100px * 0.73 */
 }
 .main {
-  padding: 4% 10%;
+  padding: 2.92% 7.3%; /* 4% 10% * 0.73 */
   display: flex;
   flex-direction: column;
 }
 .main .banner {
-  height: 230px;
+  height: 167.1px; /* 230px * 0.73 */
   background-image: url("../images/logo.jpg");
   background-position: 10% 51.2%;
   background-repeat: no-repeat;
@@ -70,24 +76,24 @@ body {
 }
 .main .title,
 .main .title_2 {
-  font-size: 77px;
-  line-height: 72px;
+  font-size: 56.29px; /* 77px * 0.73 */
+  line-height: 52.64px; /* 72px * 0.73 */
   text-align: center;
   color: #fff;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 73.89px; /* 100px * 0.73 */
+  margin-bottom: 36.5px; /* 50px * 0.73 */
 }
 .main .desc {
   text-align: center;
   color: #acb0bf;
-  font-size: 40px;
+  font-size: 29.2px; /* 40px * 0.73 */
 }
 .main .title_2 {
-  margin-top: 200px;
+  margin-top: 146px; /* 200px * 0.73 */
 }
 .slide {
-  height: 428px;
-  padding: 0 10%;
+  height: 312.84px; /* 428px * 0.73 */
+  padding: 0 20%; /* 10% * 0.73 */
   background-color: #171025;
   display: flex;
   align-items: center;
@@ -95,22 +101,22 @@ body {
 }
 .slide .desc {
   position: relative;
-  font-size: 40px;
+  font-size: 29.2px; /* 40px * 0.73 */
   color: #acb0bf;
 }
 .slide .desc::before {
   content: "";
   position: absolute;
-  left: -50px;
+  left: -36.5px; /* -50px * 0.73 */
   top: 50%;
   transform: translate(50%, -50%);
-  width: 2px;
-  height: 292px;
+  width: 1.46px; /* 2px * 0.73 */
+  height: 213.64px; /* 292px * 0.73 */
   background-color: #ffffff;
 }
 .slide .photo {
-  width: 625px;
-  height: 329px;
+  width: 456.25px; /* 625px * 0.73 */
+  height: 240.81px; /* 329px * 0.73 */
   background-size: cover;
 }
 .slide.one .photo {
@@ -120,40 +126,43 @@ body {
   background-image: url("../images/photo_two.png");
 }
 .slide.two {
-  margin-top: 5%;
+  margin-top: 3.65%; /* 5% * 0.73 */
 }
 .wall {
   width: 100%;
-  height: 314px;
+  height: 310.58px;
   background-image: url("../images/wall.png");
   background-size: contain;
-  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 73px; /* 100px * 0.73 */
 }
 .price_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 146px; /* 200px * 0.73 */
 }
 .price_container .price {
-  width: 989px;
-  height: 613px;
+  width: 722.03px; /* 989px * 0.73 */
+  height: 447.49px; /* 613px * 0.73 */
   background-image: url("../images/price.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -15px -8px;
+  background-position: -10.95px -5.84px; /* -15px -8px * 0.73 */
+  border-radius: 15px;
 }
 .price_container .btn_catalog {
-  font-size: 55px;
+  font-size: 40.15px; /* 55px * 0.73 */
   background-color: #6badb8;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   color: #fff;
-  width: 842px;
-  height: 101px;
-  margin-top: 80px;
+  width: 614.42px; /* 842px * 0.73 */
+  height: 73.73px; /* 101px * 0.73 */
+  margin-top: 58.6px; /* 80px * 0.73 */
   border: 0;
   cursor: pointer;
 }
@@ -161,21 +170,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 130px;
-  padding: 0 10%;
+  margin-top: 95.1px; /* 130px * 0.73 */
+  padding: 0 7.3%; /* 10% * 0.73 */
 }
 .gallery_container .header {
-  font-size: 170px;
+  font-size: 124.1px; /* 170px * 0.73 */
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 36.5px; /* 50px * 0.73 */
 }
 .gallery_container .photos {
   display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 446px);
+  gap: 21.9px; /* 30px * 0.73 */
+  grid-template-columns: repeat(3, 326.42px); /* repeat(3, 446px * 0.73) */
 }
 .gallery_container .photos .photo {
-  height: 446px;
+  height: 326.42px; /* 446px * 0.73 */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -202,122 +211,162 @@ body {
 .photo.four,
 .photo.five,
 .photo.six {
-  margin-top: 50px;
+  margin-top: 36.5px; /* 50px * 0.73 */
 }
 .footer {
   background-color: #1c1734;
-  height: 453px;
+  height: 330.69px; /* 453px * 0.73 */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 146px; /* 200px * 0.73 */
 }
 .footer .logo {
-  width: 285px;
-  height: 285px;
+  width: 208.95px; /* 285px * 0.73 */
+  height: 208.95px; /* 285px * 0.73 */
   background-image: url("../images/logo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 50px;
-  box-shadow: 0px 0px 23.6px 12px #92e3f23d;
+  margin-right: 36.5px; /* 50px * 0.73 */
+  box-shadow: 0px 0px 17.25px 8.76px #92e3f23d;
 }
 .footer .contact {
   background-color: #000;
   color: #fff;
   display: flex;
   align-items: center;
-  font-size: 50px;
-  width: 742px;
-  margin-left: 60px;
-  padding: 20px;
+  font-size: 36.5px; /* 50px * 0.73 */
+  width: 542.26px; /* 742px * 0.73 */
+  margin-left: 43.8px; /* 60px * 0.73 */
+  padding: 14.6px; /* 20px * 0.73 */
 }
 .icons {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 21.9px; /* 30px * 0.73 */
 }
 .icons .icon {
-  width: 68px;
-  height: 75px;
-  margin: 0 20px;
+  width: 49.66px; /* 68px * 0.73 */
+  height: 54.75px; /* 75px * 0.73 */
+  margin: 0 14.6px; /* 20px * 0.73 */
+}
+
+.price_container.games {
+  margin-bottom: 50px;
 }
 
 .container_games {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(520px, 1fr)
+  ); /* Колонки с минимальной шириной 300px */
+  gap: 36.5px; /* Расстояние между элементами */
+  align-items: start; /* Выравнивание элементов по верхнему краю */
   width: 100%;
-  padding: 10%;
+  padding: 0 7.3%; /* 10% * 0.73 */
 }
+
 .game {
   background-color: #1c1734;
-  padding: 50px;
+  padding: 36.5px; /* 50px * 0.73 */
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   border-radius: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 0; /* Убираем нижний отступ, так как используется grid gap */
 }
+
 .game .photo {
   background-image: url("../images/game.png");
-  background-position: 0px -135px;
+  background-position: 0px -98.55px; /* -135px * 0.73 */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   border-radius: 15px;
-  height: 731px;
+  height: 533.37px; /* 731px * 0.73 */
 }
+
 .game .title {
-  font-size: 95px;
-  line-height: 89.37px;
-  margin: 20px 10px;
+  font-size: 69.35px; /* 95px * 0.73 */
+  line-height: 65.43px; /* 89.37px * 0.73 */
+  margin: 14.6px 7.3px; /* 20px 10px * 0.73 */
 }
 .game .desc {
-  font-size: 40px;
-  line-height: 37.63px;
-  border: 12px solid #92e3f2;
-  padding: 20px 60px;
+  font-size: 29.2px; /* 40px * 0.73 */
+  line-height: 27.5px; /* 37.63px * 0.73 */
+  border: 8.76px solid #92e3f2; /* 12px * 0.73 */
+  padding: 14.6px 43.8px; /* 20px 60px * 0.73 */
   text-align: center;
 }
 .game .btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 29.2px; /* 40px * 0.73 */
   width: 100%;
-  margin-top: 40px;
+  margin-top: 29.2px; /* 40px * 0.73 */
 }
 .game .btns .btn {
-  font-size: 50px;
-  line-height: 47.04px;
-  border: 5px solid #92e3f2;
-  height: 153px;
+  font-size: 36.5px; /* 50px * 0.73 */
+  line-height: 34.53px; /* 47.04px * 0.73 */
+  border: 3.65px solid #92e3f2; /* 5px * 0.73 */
+  height: 112.1px; /* 153px * 0.73 */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .game .btns .btn .circle {
   border-radius: 55%;
-  width: 10px;
-  height: 10px;
+  width: 7.3px; /* 10px * 0.73 */
+  height: 7.3px; /* 10px * 0.73 */
   background-color: #fff;
-  margin-top: 10px;
-  margin-right: 30px;
+  margin-top: 7.3px; /* 10px * 0.73 */
+  margin-right: 21.9px; /* 30px * 0.73 */
 }
 .game .btns .btn:nth-child(3),
 .game .btns .btn:nth-child(4) {
-  margin-top: 20px;
+  margin-top: 14.6px; /* 20px * 0.73 */
 }
 
 .game .btn_game {
   background-color: #6badb8;
-  height: 139px;
-  font-size: 64px;
-  line-height: 60.21px;
+  height: 101.67px; /* 139px * 0.73 */
+  font-size: 46.72px; /* 64px * 0.73 */
+  line-height: 46.72px; /* 60.21px * 0.73 */
   color: #fff;
-  padding: 0 100px;
-  margin-top: 60px;
+  padding: 0 73.9px; /* 100px * 0.73 */
+  margin-top: 43.8px; /* 60px * 0.73 */
   border: 0;
   border-radius: 15px;
+}
+
+.empty_block {
+  width: 100%;
+  padding: 7.3%; /* 10% * 0.73 */
+  position: relative;
+}
+.empty_block .bg {
+  height: 307.93px; /* 421px * 0.73 */
+  width: 100%;
+}
+.empty_block .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter", sans-serif;
+
+  font-size: 58.4px; /* 80px * 0.73 */
+  line-height: 55.1px; /* 75.26px * 0.73 */
+  color: #fff;
+}
+.bottom_line {
+  height: 5px;
+  background-color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
