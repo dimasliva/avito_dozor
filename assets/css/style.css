@@ -93,7 +93,7 @@ body {
 }
 .slide {
   height: 312.84px; /* 428px * 0.73 */
-  padding: 0 20%; /* 10% * 0.73 */
+  padding: 0 8%;
   background-color: #171025;
   display: flex;
   align-items: center;
@@ -369,4 +369,66 @@ body {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.empty_block.contact {
+  background-color: #6a6a6a;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 0 40px;
+  padding-bottom: 40px;
+}
+.empty_block.contact .bg {
+  width: 100%;
+  height: 650px;
+  margin-bottom: -140px;
+}
+.empty_block.contact .text {
+  top: 39%;
+  color: black;
+}
+.empty_block.contact .btns {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.empty_block.contact .btns .btn {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 50px;
+  line-height: 47.04px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #000000;
+  padding: 20px;
+}
+.vitrual_club {
+  font-size: 80px;
+  line-height: 75.26px;
+  color: #92e3f2;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.card {
+  width: 70%;
+  margin: 0 auto;
+  background: #181818;
+  height: 797px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 150px;
+  font-weight: 400;
+  line-height: 188.15px;
+  margin-bottom: 200px;
 }
