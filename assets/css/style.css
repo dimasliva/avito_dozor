@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "AdventPro"; /* Define a name for your font */
+  src: url("/assets/fonts/AdventPro.ttf") format("truetype"); /* Path to your .ttf file */
+  font-weight: 400; /* Normal weight */
+  font-style: normal; /* Normal style */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0b16;
+  font-family: "AdventPro", sans-serif; /* Use the custom font */
+}
+.nav {
+  background-color: #16131e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 272px;
+  color: #fff;
+  padding: 0 10%;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  width: 90%;
+}
+.link {
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: all 0.3 ease-in-out;
+  border: 1px solid transparent;
+}
+.link.active {
+  color: #92e3f2;
+  border: 1px solid #92e3f2;
+}
+.link:hover {
+  color: #92e3f2;
+  border: 1px solid #92e3f2;
+}
+.logo {
+  min-width: 205px;
+  min-height: 205px;
+  background-position: center;
+  border-radius: 55%;
+  background-size: cover;
+  background-image: url("/assets/images/logo.jpg");
+  margin-right: 100px;
+}
+.main {
+  padding: 4% 10%;
+  display: flex;
+  flex-direction: column;
+}
+.main .banner {
+  height: 230px;
+  background-image: url("/assets/images/logo.jpg");
+  background-position: 10% 51.2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .title,
+.main .title_2 {
+  font-size: 77px;
+  line-height: 72px;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.main .desc {
+  text-align: center;
+  color: #acb0bf;
+  font-size: 40px;
+}
+.main .title_2 {
+  margin-top: 200px;
+}
+.slide {
+  height: 428px;
+  padding: 0 10%;
+  background-color: #171025;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide .desc {
+  position: relative;
+  font-size: 40px;
+  color: #acb0bf;
+}
+.slide .desc::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 2px;
+  height: 292px;
+  background-color: #ffffff;
+}
+.slide .photo {
+  width: 625px;
+  height: 329px;
+  background-size: cover;
+}
+.slide.one .photo {
+  background-image: url("/assets/images/photo_one.jpg");
+}
+.slide.two .photo {
+  background-image: url("/assets/images/photo_two.png");
+}
+.slide.two {
+  margin-top: 5%;
+}
+.wall {
+  width: 100%;
+  height: 314px;
+  background-image: url("/assets/images/wall.png");
+  background-size: contain;
+  margin-top: 100px;
+}
+.price_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+.price_container .price {
+  width: 989px;
+  height: 613px;
+  background-image: url("/assets/images/price.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -15px -8px;
+}
+.price_container .btn_catalog {
+  font-size: 55px;
+  background-color: #6badb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  width: 842px;
+  height: 101px;
+  margin-top: 80px;
+  border: 0;
+  cursor: pointer;
+}
+.gallery_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  padding: 0 10%;
+}
+.gallery_container .header {
+  font-size: 170px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.gallery_container .photos {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 446px);
+}
+.gallery_container .photos .photo {
+  height: 446px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.photo.one {
+  background-image: url("/assets/images/gallery_1.png");
+}
+.photo.two {
+  background-image: url("/assets/images/gallery_2.png");
+}
+.photo.three {
+  background-image: url("/assets/images/gallery_3.png");
+}
+.photo.four {
+  background-image: url("/assets/images/gallery_4.png");
+}
+.photo.five {
+  background-image: url("/assets/images/gallery_5.png");
+}
+.photo.six {
+  background-image: url("/assets/images/gallery_6.png");
+}
+.photo.four,
+.photo.five,
+.photo.six {
+  margin-top: 50px;
+}
+.footer {
+  background-color: #1c1734;
+  height: 453px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.footer .logo {
+  width: 285px;
+  height: 285px;
+  background-image: url("/assets/images/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+  box-shadow: 0px 0px 23.6px 12px #92e3f23d;
+}
+.footer .contact {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  width: 742px;
+  margin-left: 60px;
+  padding: 20px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.icons .icon {
+  width: 68px;
+  height: 75px;
+  margin: 0 20px;
+}
