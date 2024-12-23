@@ -48,11 +48,12 @@ body {
   justify-content: space-between;
   height: 198px; /* 272px * 0.73 */
   color: #fff;
-  padding: 0 7.3%; /* 10% * 0.73 */
+  padding: 0 8%; /* 10% * 0.73 */
 }
 .links {
+  width: 80%;
   display: flex;
-  gap: 250px;
+  justify-content: space-between;
   font-size: 25.55px; /* 35px * 0.73 */
 }
 .link {
@@ -60,10 +61,10 @@ body {
   padding: 7.3px 21.9px; /* 10px 30px * 0.73 */
   transition: all 0.3 ease-in-out;
   border: 1px solid transparent;
-}
-.link {
+  white-space: nowrap;
   color: white;
   text-decoration: none;
+  font-size: 2rem;
 }
 .link.active {
   color: #92e3f2;
