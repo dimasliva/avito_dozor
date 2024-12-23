@@ -104,6 +104,18 @@ body {
   margin-top: 73.89px; /* 100px * 0.73 */
   margin-bottom: 36.5px; /* 50px * 0.73 */
 }
+.vr_gif {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 480px;
+  background-image: url("../images/vr.gif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px; /* Закругленные углы для более мягкого вида */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Тень для темной темы */
+}
+
 .main .desc {
   text-align: center;
   color: #acb0bf;
